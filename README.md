@@ -30,7 +30,7 @@ ergodox_ez_[your name].hex
 
 Follow [この手順](https://qiita.com/kei_s/items/40a896d1a1c70f2961e0#流し込み手順) to load the hex file into your keyboard using teensy.
 
-DOne :)
+Done :)
 
 ## References
 
