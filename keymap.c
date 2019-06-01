@@ -22,15 +22,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Keymap 0: Basic layer
      *
      * ,--------------------------------------------------.           ,--------------------------------------------------.
-     * | ESC    |   1  |   2  |   3  |   4  |   5  |      |           |      |   6  |   7  |   8  |   9  |   0  |   -    |
+     * | ESC    | 1, ! | 2, " | 3, # | 4, $ | 5, % |      |           |      | 6, & | 7, ' | 8, ( | 9, ) |   0  | -, =   |
      * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
      * | Tab    |   Q  |   W  |   E  |   R  |   T  |      |           |      |   Y  |   U  |   I  |   O  |   P  | TG (1) |
      * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
-     * | LCtrl  |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |   '  |Bacspace|
+     * | LCtrl  |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  | :, * |Bacspace|
      * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
      * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RShift |
      * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
-     *   |      |      |      | LAlt | Lang2|                                       | Lang1|      |      |      |      |
+     *   |      |      |      | LAlt | Lang2|                                       | Lang1|      | ;, + | @, ` |  _   |
      *   `----------------------------------'                                       `----------------------------------'
      *                                        ,-------------.       ,-------------.
      *                                        |      |      |       | Left | Right|
@@ -57,11 +57,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         /*
          * right hand
          */
-        KC_TRANSPARENT, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINUS,                    //
-        KC_TRANSPARENT, KC_Y, KC_U, KC_I, KC_O, KC_P, TG(1),                       //
-        KC_H, KC_J, KC_K, KC_L, KC_QUOTE, KC_BSPACE,                               //
-        KC_TRANSPARENT, KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSHIFT,         //
-        KC_LANG1, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,  //
+        KC_TRANSPARENT, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINUS,             //
+        KC_TRANSPARENT, KC_Y, KC_U, KC_I, KC_O, KC_P, TG(1),                //
+        KC_H, KC_J, KC_K, KC_L, JP_COLN, KC_BSPACE,                         //
+        KC_TRANSPARENT, KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSHIFT,  //
+        KC_LANG1, KC_TRANSPARENT, KC_SCLN, JP_AT, JP_BSLS,                  //
         //
         KC_LEFT, KC_RIGHT, KC_UP, KC_DOWN,  //
         KC_TRANSPARENT, KC_KP_ENTER),       //
